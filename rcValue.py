@@ -39,11 +39,6 @@ for n in range(-6,-2):
             C.append(float('%.3g' % c))
 
 for r in R:
-    print(r)
-for c in C:
-    print(c)
-
-for r in R:
     for c in C:
         if r*c >= lowerBound and r*c <= upperBound and [r,c] not in solList:
             print("R = %-*s C = %-*s" % \
